@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+   
+
+    <!-- Animate Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Jonsuh Hamburger -->
+    <link rel="stylesheet" href="dist/css/hamburgers.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Ardelia Cahya Davina</title>
+  </head>
+  <body id="home">
+    <!-- Header -->
+    <section class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-nav">
+            <!-- <i class="fa-solid fa-mountain"></i> -->
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#home"> <i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <!-- <li>
+              <a href="#best"
+                ><i class="fa-solid fa-star"></i>Best Destination</a
+              >
+            </li> -->
+            <li>
+              <a href="#services"><i class="fa-solid fa-list"></i>Quote</a>
+            </li>
+            <li>
+              <a href="#gallery"><i class="fa-solid fa-image"></i>Gallery</a>
+            </li>
+          </ul>
+          <button class="about-button" type="button" onclick="scrollToAbout()" >About She</button>
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="hero">
+          <h1 class="animate__animated animate__fadeInUp animate__delay-3s">
+            <span id="t1">PESAN UNTUK</span> <br />
+            <span id="t2">ARDELIA CAHYA DAVINA</span>
+          </h1>
+          <div class="hero-jargon">
+            <div class="animate__animated animate__fadeInUp animate__delay-1s">
+              <p>
+                <span
+                  >Haloo Adelll! <br />udah lama ya kita ga ngobrol kaya dulu hehe. Jujur
+                  agak kangen sieee trus juga pengen bisa kaya dulu lagi.
+                </span>
+              </p>
+            </div>
+            <div class="animate__animated animate__fadeInUp animate__delay-1s">
+              <p>
+                <span
+                  >Oiya gua belum ngucapin ulangtahun yang bener nihhh wkwkwk, Happy Birthday Adell.
+                  I hope u know that many people love u, and If you think no one loves you, you are 
+                  wrong because I love you. Jangan ngerasa sendirian ya del, sekali kali ngeluh juga gapapa kooo. </span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header -->
+
+    <!-- Best Destination -->
+    <!-- <section class="best-destination" id="best">
+      <div class="container">
+        <div class="best-destination-box">
+          <div class="box">
+            <h1 data-aos="fade-up">Best Destination</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Berikut ini Destinasi pilihan Terbaik yang dapat dikunjungi.
+            </p>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/IMG-20241008-WA0023.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Canggu Beach</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Canggu, Bali</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/best-destination/cikole-lembang-bandung.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Cikole</h3>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Lembang, Bandung
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/best-destination/kelingking-beach-nusapenida-bali.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Kelingking Beach</h3>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Nusa Penida, Bali
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/best-destination/komodo-island-nusatenggara.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Komodo Island</h3>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Nusa Tenggara
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/best-destination/mount-bromo-jawatimur.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Mount Bromo</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Jawa Timur</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/best-destination/raja-ampat-papua.jpg"
+                    alt="unsplash.com"
+                  />
+                  <div class="loc">
+                    <h3>Raja Ampat</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Papua</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Best Destination -->
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services-box">
+          <div class="box">
+            <h1 data-aos="fade-up">Quote</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Berikut ini quote buat Adelll.
+            </p>
+          </div>
+          <div class="box">
+            <div class="service" data-aos="fade-down" data-aos-delay="400">
+              <p>
+                Setiap langkah kecil yang kita ambil dalam hidup ini, meski terlihat sepele, adalah bagian dari perjalanan menuju impian yang lebih besar. Ingatlah, ketidakpastian adalah bagian dari proses. Teruslah bergerak maju, meskipun tantangan menghadang.
+              </p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="400">
+              <p>
+                u did great job until today adell, i'm so proud of you!!!.
+              </p>
+            </div>
+            <div class="service" data-aos="fade-down" data-aos-delay="400">
+              <p>
+                Adel itu ibarat apa yaaa, gatau dehhh susah dijelasin soalnya terlalu cantik jadi gaada yang nyamain.
+              </p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="400">
+              <p>
+                Kenal sama lu itu hal yang harus gua syukurin sihhh, banyak hal yang bisa gua pelajarin selama sama lu. Thanks God, I hope u make Adel always happy.
+                And thanks God because you made me meet and know Adel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="gallery-box">
+          <div class="box">
+            <h1 data-aos="fade-up"> Gallery</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Berikut ini beberapa Foto Lucu Adel Beberapa Tahun lalu
+            </p>
+          </div>
+          <div class="box">
+            <a
+              href="assets/images/IMG-20241008-WA0023.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images/IMG-20241008-WA0023.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+            <a
+              href="assets/images/IMG-20241008-WA0024.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images//IMG-20241008-WA0024.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+            <a
+              href="assets/images/IMG-20241008-WA0028.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images/IMG-20241008-WA0028.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+            <a
+              href="assets/images/IMG-20241008-WA0031.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images/IMG-20241008-WA0031.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+            <a
+              href="assets/images/IMG-20241008-WA0034.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images/IMG-20241008-WA0034.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+            <a
+              href="assets/images/IMG-20241008-WA0039.jpg"
+              target="_blank"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/images/IMG-20241008-WA0039.jpg"
+                alt="unsplash.com"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+
+    <!-- About Us -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-box">
+          <div class="box">
+            <h1 data-aos="fade-up">About She</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+             Ini adalah bagaimana saya mendeskripsikan dia.
+            </p>
+          </div>
+          <div class="box">
+            <div data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/images/IMG-20241008-WA0022.jpg" alt="unsplash.com" />
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400">
+              <h2>Who's she?</h2>
+
+              <p>
+                Dia adalah seseorang yang kutemui di masa terakhir putih
+                abu-abuku. Dia juga adalah seseorang yang membawa warna baru
+                dalam hidupku.</p>
+
+               <p>Dia indah, dia sempurna, melihat senyumnya dari kejauhan
+                sudah membuatku bahagia. Aku sangat bahagia melihatnya bahagia,
+                selalu dan selamanya.</p><br>
+
+                 <p>Aku mengagumi dan menyukai hal-hal
+                  indah yang jauh seperti langit, senja, bulan dan Adel. Rasa
+                  suka dan kagumku pada keindahan tersebut menyadarkan aku bawah
+                  meski aku menyukainya, bukan berarti aku harus memilikinya juga.</p><br>
+
+               <p> Dia perempuan yang sangat hebat, dia juga begitu sempurna, maka
+                dari itu aku berharap dia selalu bahagia, dengan siapapun dia
+                nantinya dan dimana pun dia berada, aku akan selalu
+                mendoakannya. </p><br>
+
+                <p>Semesta juga harus tahu, sebelum aku merelakan
+                  nya, aku sangat mencintai pemilik senyum yang indah itu,bahkan
+                  aku menaruh harapan yang tinggi padanya hingga aku menyadari,
+                  orang sepertiku tidak berhak menyukai langit, apalagi
+                  memilikinya. </p><br>
+
+               <p> aku berharap agar
+                kita dapat bertemu kembali suatu hari nanti dengan versi terbaik
+                dari sebelumnya, pada hari itu aku ingin menyampaikan apa yang sudah dilewati sejauh 
+                ini. Walaupun pada akhirnya tetap sama
+                saja seperti sebelumnya tapi aku bahagia jika kita bisa bertemu
+                kembali.</p><br>
+
+                <p>Salam yaaa buat mama, papa, Dapin. Bilangin "makasih banyak tantee karna Asan sering
+                  nanya nanya ke tante kalau Asan ga berani nanya ke Adelnya langsung hehe. Makasih juga
+                  ya tan dulu sering beliin Asan oleh-oleh :D". Jangan sedih sedih ya del. Kalo
+                  ngerasa gaada yang peduli sama lu, gua selalu peduli sama lu ko del. Udah yaaa cape ngetik
+                  panjang lebar kali sisi kaya begini. Goodbyeee Adellll, lov uuuu </p><br>
+
+                  <p>Sorry yaaa alay karna (((emang))) WKWKWKWKWK BABAIII.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+
+ <div class="popup-overlay"></div>
+<div class="popup" id="popup">
+  <p>Mainkan musik?</p>
+  <button onclick="playMusic()">Ya</button>
+  <button onclick="closePopup()">Tidak</button>
+</div>
+    <audio id="music" src="assets/musik/adel.mp3"></audio>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <p>
+            &copy; Copyright by <span>Rizqi Asan Masika</span> 2024, All Right
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+
+    <!-- Pre Loader -->
+    <div class="loader">
+      <img src="assets/loader/loader.svg" alt="loading.io" />
+    </div>
+    <!-- Pre Loader -->
+
+    <!-- JS -->
+    <script src="dist/js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "fraction",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+
+
+<script>
+  const aboutSection = document.getElementById('about');
+  const popup = document.querySelector('.popup');
+  const overlay = document.querySelector('.popup-overlay');
+  const music = document.getElementById('music');
+  let hasShownPopup = false;
+
+  function scrollToAbout() {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth" }); // Scroll halus
+  }
+
+  // Deteksi scroll sampai ke section "about"
+  window.addEventListener('scroll', function() {
+    const sectionPosition = aboutSection.getBoundingClientRect();
+    if (sectionPosition.top < window.innerHeight && sectionPosition.bottom >= 0 && !hasShownPopup) {
+      showPopup();
+      hasShownPopup = true;
+    }
+  });
+
+  // Tampilkan pop-up
+  function showPopup() {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+
+  // Putar musik ketika tombol "Ya" ditekan
+  function playMusic() {
+    music.play(); // Mulai putar musik
+    closePopup(); // Tutup pop-up
+  }
+
+  // Tutup pop-up
+  function closePopup() {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+</script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
